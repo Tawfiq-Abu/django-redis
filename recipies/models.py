@@ -13,7 +13,7 @@ class Recipe(models.Model):
     category = models.ForeignKey(Category,on_delete=models.CASCADE)
     name = models.CharField(max_length=200)
     image_url = models.CharField(max_length=500)
-    description = models.TextField
+    description = models.TextField()
 
     def __str__(self) -> str:
         return self.name
